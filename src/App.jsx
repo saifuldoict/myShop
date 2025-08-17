@@ -8,6 +8,7 @@ import Products from "./components/Products/Products.jsx";
 import TopProducts from "./components/TopProducts/TopProducts.jsx";
 import Subscribe from "./components/Subscribe/Subscribe.jsx";
 import Testimonials from "./components/Testimonials/Testimonials.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 
 const App = () => {
 const [orderPopup, setOrderPopup] = useState(false);
@@ -41,6 +42,7 @@ useEffect(() => {
       <Subscribe/>
       <Testimonials/>
       <Banner/>
+      <Footer/>
     </div>
   );
 };
