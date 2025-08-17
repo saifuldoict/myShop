@@ -5,6 +5,7 @@ import Banner from "./components/Banner/Banner.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
 import Hero from "./components/Hero/Hero.jsx";
 import Products from "./components/Products/Products.jsx";
+import TopProducts from "./components/TopProducts/TopProducts.jsx";
 
 const App = () => {
 const [orderPopup, setOrderPopup] = useState(false);
@@ -34,6 +35,7 @@ useEffect(() => {
       <Navbar handleOrderPopup={handleOrderPopup} />
       <Hero handleOrderPopup={handleOrderPopup}/>
       <Products handleOrderPopup={handleOrderPopup}/>
+      <TopProducts handleOrderPopup={handleOrderPopup}/>
       <Banner/>
     </div>
   );
