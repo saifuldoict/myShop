@@ -31,8 +31,8 @@ const TestimonialsData = [
 ]
 const Testimonials = () => {
   const settings ={
-    dots:false,
-    arrows:false,
+    dots:true,
+    arrows:true,
     Infinite:true,
     space:500,
     sideToscroll:1,
@@ -45,8 +45,8 @@ const Testimonials = () => {
       {
         breakpoint:10000,
         settings:{
-          slideToShow:3,
-          slideToscroll:1,
+          slidesToShow:3,
+          slidesToscroll:1,
           Infinite:true,
 
         }
@@ -54,8 +54,8 @@ const Testimonials = () => {
       {
         breakpoint:1024,
         settings:{
-          slideToShow:2,
-          slideToscroll:1,
+          slidesToShow:2,
+          slidesToscroll:1,
           initialSlider:2
 
         }
@@ -63,8 +63,8 @@ const Testimonials = () => {
        {
         breakpoint:640,
         settings:{
-          slideToShow:1,
-          slideToscroll:1
+          slidesToShow:1,
+          slidesToscroll:1
         }
       }
     ]
@@ -76,7 +76,7 @@ const Testimonials = () => {
       <div className='container'>
         <div className='text-center mb-10 max-w-[600px] mx-auto'>
           <p data-aos="zfade-up" className='text-sm text-primary'>Customers Feed Back</p>
-          <h1 data-aos="fade-up" className='text-3xl font-bold'>Textiomonals</h1>
+          <h1 data-aos="fade-up" className='text-3xl font-bold'>Testimonials</h1>
           <p className='text-sm text-gray-500'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad illo soluta amet culpa eaque modi molestias, exercitationem recusandae ipsam incidunt.</p>
 
         </div>
@@ -90,15 +90,15 @@ const Testimonials = () => {
                 </div>
                 <div className='flex flex-col items-center gap-4'>
                     <div className='space-y-3'>
-                      <p className='text-xs dark:text-slate-300 text-gray-500'>
+                      <p className='text-xs dark:text-slate-300 text-white text-start'>
                       {data.Text}
                       </p>
-                      <h1 className='text-xl font-bold dark:text-slate-300 text-black/80 dark:text-light'>
+                      <h1 className='text-xl font-bold dark:text-slate-300 text-white/80 '>
                         {data.name}
                       </h1>
                     </div>
                 </div>
-                <p className='text-black/20 text-9xl font-serif top-0 right-0'></p>
+                <p className='text-white/80 text-9xl font-serif top-0 right-0 '></p>
                 </div>
               </div>
             ))}

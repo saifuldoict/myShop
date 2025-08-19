@@ -37,11 +37,11 @@ useEffect(() => {
     <div className="bg-white dark:bg-gray-900 dark:text-white duration-200">
       <Navbar handleOrderPopup={handleOrderPopup} />
       <Hero handleOrderPopup={handleOrderPopup}/>
-      <Products handleOrderPopup={handleOrderPopup}/>
+      <Products/>
       <TopProducts handleOrderPopup={handleOrderPopup}/>
       <Subscribe/>
-      <Testimonials/>
       <Banner/>
+      <Testimonials/>
       <Footer/>
     </div>
   );

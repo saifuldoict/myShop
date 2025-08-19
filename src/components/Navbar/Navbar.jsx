@@ -62,22 +62,26 @@ const Navbar = ({handleOrderPopup}) => {
             <span className='text-rose-700'>My</span>Shop
           </a>
         </div>
+           {/* search bar */}
         <div className='flex justify-between items-center gap-4 '>
           <div className='relative group hidden sm:block'>
-            <input type='text' placeholder='Search Products...' className='w-[200px] sm:w-[200px] group-hover:w-[300px] transition-all duration-300 rounded-lg border border-gray-300 py-1 px-2
-                text-sm focus:outline-none focus:border-1 focus:border-primary dark:border-gray-500 dark:bg-slate-800' />
+            <input type='text' placeholder='Search Products...' 
+            className='w-[200px] sm:w-[200px] group-hover:w-[300px] transition-all duration-300 rounded-lg border border-gray-300 py-1 px-2
+                text-sm focus:outline-none   dark:border-gray-500 dark:bg-slate-800' />
                 <img src={icon} className="w-5 group-hover:text-primary absolute top-1/2 -translate-y-1/2 right-3"/>
           </div>
-          <button onClick={()=>{
-            handleOrderPopup()
-          }}
+          {/* order button */}
+          <button onClick={()=>handleOrderPopup()}
           className='flex max-w-[100px] bg-gradient-to-t from-primary to-secondary transition-all duration-200 text-white py-1 px-4 rounded-full items-center gap-3 group'
           >
             <span className='group-hover:block hidden transition-all duration-200 '>Order</span>
-            <img src={cart} className="w-5 drop-shadow-sm cursor-pointer"/>
+            <img src={cart} className="w-5 cursor-pointer"/>
           </button>
-        </div>
-        <DarkMode/>
+          {/* Darkmode Switch */}
+            <div>
+              <DarkMode />
+            </div>
+        </div>     
       </div>
       </div>
       {/*lower navbar*/}

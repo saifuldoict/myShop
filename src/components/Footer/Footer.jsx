@@ -103,23 +103,23 @@ const Footer = () => {
             <div>
               <div className="flex items-center gap-3 mt-6">
                 <a href="#">
-                  <FaInstagram className="text-3xl" />
+                  <FaInstagram className="text-3xl text-[#e4405f]" />
                 </a>
                 <a href="#">
-                  <FaFacebook className="text-3xl" />
+                  <FaFacebook className="text-3xl text-[#3b5999]" />
                 </a>
                 <a href="#">
-                  <FaLinkedin className="text-3xl" />
+                  <FaLinkedin className="text-3xl text-[#0077b5]" />
                 </a>
               </div>
               <div className="mt-6">
                 <div className="flex items-center gap-3">
                   <FaMapLocationDot />
-                  <p>Indore, Madhya Pradesh</p>
+                  <p>Lorem, lorem $#2045</p>
                 </div>
                 <div className="flex items-center gap-3 mt-3">
                   <IoCall />
-                  <p>+91 123456789</p>
+                  <p>+91 02474503</p>
                 </div>
               </div>
             </div>
